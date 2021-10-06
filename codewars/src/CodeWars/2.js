@@ -1,8 +1,12 @@
+//Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with
+// the exponent ranging from 0 to n (inclusive).
 
-//In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list
-// with the strings filtered out.
 
 
-function filter_list(l) {
-    return l.filter( str => typeof str != 'string');
+function powersOfTwo(n){
+    let myArray = [];
+    for (let i=0; i<=n; i++){
+        myArray.push(2**i);
+    }
+    return myArray
 }
